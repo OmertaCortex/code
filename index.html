@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" 
+        content="width=device-width, initial-scale=1.0">
+        <title>omerta cortex</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+ 
+<!--img class="image"src="img/omerta.jpg" alt="omerta"> -->
+<!--br> -->
+
+<!-- Videos-->
+ <div class = "container"> 
+    <div class="box">
+    <video src ="video/otherlife1.mp4" type="video/mp4" loop class="clip" ></video>
+ </div>
+ <div class="box">
+ <video src ="video/otherlife2.mp4" type="video/mp4" loop class="clip"  > </video>
+</div>
+<div class="box">
+    <video src ="video/otherlife3.mp4" type="video/mp4" loop class="clip"  ></video>
+    </div>
+        <div class="box">
+            <video src ="video/otherlife4.mp4" type="video/mp4" loop class="clip"  ></video>
+        </div> 
+</div>
+
+<script>
+    const clip = document.querySelectorAll('.clip');
+for (let i = 0; i < clip.length; i++) {
+    clip[i].addEventListener('mouseenter', function() {
+        this.play();
+    });
+
+    clip[i].addEventListener('mouseout', function() {
+        this.pause();
+    });
+}
+
+    </script>
+    
+    </body>
+</html>
